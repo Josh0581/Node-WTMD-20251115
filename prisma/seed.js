@@ -4,11 +4,9 @@ const prisma = new PrismaClient();
 
 async function main() {
   // 기존 유저 삭제
-
   await prisma.user.deleteMany();
 
   // 1) 사용자 생성
-
   const alice = await prisma.user.create({
     data: { email: 'alice@example.com', name: 'Alice' },
   });
@@ -18,13 +16,11 @@ async function main() {
   });
 
   // 2) 프로필 생성 (1:1)
-
   await prisma.profile.create({
     data: { bio: 'Hello, I am Alice', userId: alice.id },
   });
 
   // 3) 게시글 생성 (1:N)
-
   await prisma.post.create({
     data: {
       title: 'First Post',
