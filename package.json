@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Josh0581/Node-WTMD-20251115#readme",
   "dependencies": {
+    "@prisma/client": "^6.19.0",
     "express": "^5.1.0",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "prisma": "^6.19.0"
   }
 }
