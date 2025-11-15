@@ -4,6 +4,12 @@ GET http://localhost:3000
 GET http://localhost:3000/posts
 
 ###
+GET http://localhost:3000/posts/1  
+
+###
+GET http://localhost:3000/posts/10
+
+###
 POST http://localhost:3000/posts
 Content-Type: application/json
 
