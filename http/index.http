@@ -1,0 +1,11 @@
+GET http://localhost:3000
+
+### 
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "세 번째 글",
+  "content": "POST 요청으로 작성된 글입니다."
+}
