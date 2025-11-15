@@ -1,0 +1,17 @@
+{
+  // ===== Editor 기본 설정 =====
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // ===== Prettier 설정 =====
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
+}
