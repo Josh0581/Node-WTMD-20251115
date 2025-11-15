@@ -42,8 +42,8 @@ app.patch('/posts/:id', (req, res) => {
 
   if (!post) return res.status(404).json({ message: 'Post not found' });
 
-  // PATCH 요청에서 null 과 undefined 를 다르게 처리하는 방법
-  // title이 null 이면 null 로, undefined라면 post.title 을 업데이트 하지 않도록 한다
+  // PATCH 요청은 일반적으로 필드를 선택적으로 업데이트
+  // title이 null 또는 undefined라면 post.title 을 사용 하도록 한다
   post.title = title ?? post.title;
   post.content = content ?? post.content;
   res.json(post);

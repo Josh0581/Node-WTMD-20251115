@@ -17,3 +17,15 @@ Content-Type: application/json
   "title": "새로운 글",
   "content": "POST 요청으로 작성된 글입니다."
 }
+
+###
+PATCH http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "title": "새로운 글2",
+  "content": "PATCH 요청으로 수정된 글입니다."
+}
+
+###
+DELETE http://localhost:3000/posts/1
